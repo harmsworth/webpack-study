@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./font/Pretty-Pen-Regular.otf') format('otf'),
+        url('./font/Pretty-Pen-Regular.ttf') format('ttf'),
+        url('./font/Pretty-Pen-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+.hello{
+  color: red;
+  font-family: 'MyFont';
+  background: url('./支付宝.png') no-repeat;
+  height: 200px;
+}
