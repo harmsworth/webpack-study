@@ -1,9 +1,13 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.js',
+  // 多入口，根据入口起点名称动态生成bundle名称
+  entry: {
+    app: './src/index.js',
+    print: './src/print.js'
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -32,3 +36,4 @@ module.exports = {
     ]
   }
 }
+
